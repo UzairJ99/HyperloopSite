@@ -1,0 +1,32 @@
+body
+{
+    overflow-x: hidden;
+}
+
+#logoDiv 
+{
+    padding: 5px;
+    transition: transform .2s;
+    border-radius: 10px;
+}
+
+#logoDiv:hover 
+{
+    transform: scale(1.3);
+    z-index: 1000;
+}
+
+#navbarNav
+{
+    z-index: 0;
+    position: relative;
+}
+
+#logoDiv
+{
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    display: in-line;
+    width: 100%;
+}
