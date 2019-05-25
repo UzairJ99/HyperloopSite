@@ -1,7 +1,7 @@
 body
 {
     overflow-x: hidden;
-    background-color: black;
+    background-color: rgb(14, 14, 14);
 }
 
 /* navbar effects */
@@ -14,7 +14,7 @@ body
 {
     margin: auto;
     transition: transform .2s;
-    height: 70px;
+    height: 130px;
     z-index: 0;
     text-align: center;
     position: relative;
@@ -38,7 +38,7 @@ body
     position: absolute;
     margin: auto;
     text-align: center;
-    width: 204.44px;
+    width: 102.22px;
     left: 102.22px;
     margin-left: 50%;
     z-index: 0;
@@ -71,6 +71,7 @@ body
 .nav-item
 {
     padding: 10px;
+    margin-right: 60px;
 }
 
 .navbar-toggler
