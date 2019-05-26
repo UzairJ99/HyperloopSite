@@ -2,12 +2,13 @@ body
 {
     overflow-x: hidden;
     background-color: rgb(14, 14, 14);
+    font-family: 'Varela Round', sans-serif;
 }
 
 /* navbar effects */
 .bg-light
 {
-    box-shadow: 0px 1px 6px 1px white;
+    box-shadow: 0px -1px 6px 2px grey;
 }
 
 #logo
@@ -83,4 +84,15 @@ body
 .navbar-collapse collapse show
 {
     width: 100%;
+}
+
+/* navbar tab links */
+.navbar-light .navbar-nav .nav-link
+{
+    color: rgb(66, 66, 66);
+    /* font-family: 'Varela Round', sans-serif; */
+}
+.navbar-light .navbar-nav .nav-link:hover
+{
+    color: rgb(52, 137, 206);
 }
