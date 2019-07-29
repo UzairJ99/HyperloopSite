@@ -27,3 +27,18 @@
   padding-top: 100px;
   font-size: 28px;
 }
+
+#startingParagraph::first-letter
+{
+  font-size: 52px;
+}
+
+/* spacing between paragraphs */
+#startingParagraph
+{
+  margin-bottom: 46px;
+}
+.paragraph
+{
+  margin-bottom: 46px;
+}
