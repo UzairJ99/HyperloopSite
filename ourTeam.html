@@ -5,7 +5,8 @@
 	<!-- bootstrap 4 link -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<!-- CSS stylesheets -->
-	<link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="stylesheets/subpage.css">
 	<link rel="icon" href="images/logoM.png">
   <!-- custom fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
 		<!-- middle logo M -->
 		<container id="logoContainer">
 			<div id="logoDiv">
-				<img id="logo" src="images/logoM.png">
+        <a href="./index.html"><img id="logo" src="images/logoM.png"></a>
 			</div>
 		</container>
 		<!-- toggle button for drop down -->
@@ -53,7 +54,36 @@
 	      </ul>
 	    </form>
 	  </div>
-	</nav>
+  </nav>
+	
+	<!-- page backdrop -->
+  <div id="teamPanel">
+    <img id="teamPanel_backdrop" src="images/about_background.jpg">
+  </div>
+  <div>
+    <h1 id="subpageTitle">OUR TEAM</h1>
+	</div>
+	<!-- page content -->
+  <div id="teamPanel_info">
+    <div class="container">
+      <p id="startingParagraph">
+        McMaster Hyperloop is comprised of 50 ambitious students, all working towards designing
+        and building a functional prototype which we will be taking to compete at the SpaceX Hyperloop
+        Pod Competition. We are striving to include all fields of research including biology, engineering, 
+        and economics, bringing a unique, unified approach to the international competition.
+      </p>
+    </div>
+	</div>
+	
+	<!-- footer for every page -->
+	<div id="footer_panel">
+		<span>
+			<img id="spacex_footer" src="images/spacexlogo.png">
+			<img id="macu_footer" src="images/macu_brighterworld.png">
+		</span>
+		<hr>
+		<p style="color: rgb(168, 168, 168);">McMaster Hyperloop 2019</p>
+	</div>
 
 	<!-- JS Script files for bootstrap 4 -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
