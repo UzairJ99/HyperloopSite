@@ -154,28 +154,22 @@ hr
   text-align: center;
 }
 
-#teamBtn
+.teamBtn
 {
   border-radius: 0;
   height: 80px;
   font-size: 25px;
 }
 
-#softwareTeam
+.hiddenPanel
+{
+  visibility: hidden; 
+  position: absolute;
+}
+
+.visiblePanel
 {
   visibility: visible; 
-  position: absolute;
-}
-
-#mechanicalTeam
-{
-  visibility: hidden;
-  position: absolute;
-}
-
-#electricalTeam
-{
-  visibility: hidden;
   position: absolute;
 }
 
