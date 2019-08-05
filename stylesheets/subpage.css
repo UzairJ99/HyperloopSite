@@ -147,7 +147,7 @@ hr
   color: rgb(95, 166, 248);
 }
 
-  #team_description
+#teamDesc
 {
   font-size: 20px;
   color: white;
@@ -159,4 +159,22 @@ hr
   border-radius: 0;
   height: 80px;
   font-size: 25px;
+}
+
+#softwareTeam
+{
+  visibility: visible; 
+  position: absolute;
+}
+
+#mechanicalTeam
+{
+  visibility: hidden;
+  position: absolute;
+}
+
+#electricalTeam
+{
+  visibility: hidden;
+  position: absolute;
 }
