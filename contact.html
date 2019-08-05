@@ -65,7 +65,7 @@
           <h3 id="subheading">Address</h3>
           <p>The following address can be used for postal sendings as well as prototype parts:</p>
           <br>
-          <p>McMaster Hyperloop <br> 123 Some Random Street <br> 1A2B3C <br> Hamilton, Ontario</p>
+          <p>McMaster Hyperloop <br> 1280 Main St West <br> L8S 4L8 <br> Hamilton, Ontario</p>
           <br>
           <h3 id="subheading">E-mail:</h3>
           <p>mcmasterhyperloopteam@gmail.com</p>
@@ -117,7 +117,9 @@
 	 <script  type="text/javascript">
 	 $(window).on('scroll', function () {
 			var scrollTop = $(window).scrollTop();
-			if (scrollTop > 50) {
+      if (scrollTop > 50) 
+      {
+        var scaleSize = 0;
 					$('#logoDiv').stop().animate({height: "60px"},200);
 			}
 			else {
