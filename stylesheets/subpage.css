@@ -178,3 +178,8 @@ hr
   visibility: hidden;
   position: absolute;
 }
+
+#contactForm
+{
+  margin-top: 200px;
+}

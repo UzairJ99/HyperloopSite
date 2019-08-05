@@ -56,12 +56,27 @@
 	  </div>
   </nav>
   
+  <!-- panel -->
   <div class="container">
-    <span style="width: 100%;" id="addressInfo">
-      <p class="paragraph">Address</p>
-    </span>
-    <span style="width: 100%;" id="msgForm">
-        <form>
+    <div id="contactForm" class="row">
+      <!-- left panel for address info -->
+      <div class="col-md">
+        <span style="width: 100%;" id="addressInfo">
+          <h3 id="subheading">Address</h3>
+          <p>The following address can be used for postal sendings as well as prototype parts:</p>
+          <br>
+          <p>McMaster Hyperloop <br> 123 Some Random Street <br> 1A2B3C <br> Hamilton, Ontario</p>
+          <br>
+          <h3 id="subheading">E-mail:</h3>
+          <p>mcmasterhyperloopteam@gmail.com</p>
+        </span>
+      </div>
+      <!-- right panel for email -->
+      <div class="col-md">
+        <span style="width: 100%;" id="msgForm">
+          <h3 id="subheading">Let's Get In Touch</h3>
+          <form>
+            <!-- first and last name input -->
             <div class="form-row">
                 <div class="col">
                   <label>First Name *</label>
@@ -72,17 +87,23 @@
                   <input type="text" class="form-control" placeholder="Last name">
                 </div>
             </div>
+            <br>
+            <!-- email address -->
             <div class="form-group">
               <label for="inputAddress">E-mail *</label>
               <input type="text" class="form-control" id="inputAddress" placeholder="exampleName@example.com">
             </div>
+            <!-- message conent -->
             <div class="form-group">
               <label>Message *</label>
               <textarea class="form-control" placeholder="Enter your message here."></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Send!</button>
+            <!-- submission button -->
+            <button type="submit" class="btn btn-lg btn-primary">Send!</button>
           </form>
-    </span>
+        </span>
+      </div>
+    </div>
   </div>
 
 	<!-- JS Script files for bootstrap 4 -->
