@@ -4,7 +4,7 @@
 $(window).on('scroll', function () 
 		{
 			 var scrollTop = $(window).scrollTop();
-			 if (scrollTop > 40) 
+			 if (scrollTop > 4) 
 			 {
 					$('#logo').stop().animate({height: "65px", paddingLeft: "15px"},50);
 			 }
