@@ -56,38 +56,68 @@
   </nav>
 	
 	<!-- page backdrop -->
-  <div id="partnersPanel">
-		<h1 style="color: rgb(95, 166, 248);" id="subpageTitle_secondary">PARTNERS</h1>
+  <div id="teamPanel">
+      <!-- news carousel from Bootstrap 4 -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div style="height: 550px;" class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- first slide -->
+              <img class="d-block w-100" src="./images/slide_1.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <!-- second slide -->
+              <img class="d-block w-100" src="./images/slide_2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <!-- second slide -->
+                <img class="d-block w-100" src="./images/slide_3.jpg" alt="Third slide">
+              </div>
+          </div>
+          <!-- control buttons -->
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+      </div>
+      <div style="background-color: rgba(0, 0, 0, 0.795); right: 0%; left: 50%; top: 10px; bottom: 0px;" class="carousel-caption d-none d-md-block">
+          <h1 style="font-size: 30px;">BLOG</h1>
+          <p id="teamDesc">News on our Pod development and launch mission.</p>
+          <p id="teamDesc">Updates coming soon...</p>
+      </div>
+		  
+	</div>
+
+	<!-- button panel for different sub teams -->
+	<div id="newsButtons" class="btn-group" role="group">
+		<span style="width: 100%;"><button id="blogsBtn" class="btn btn-primary btn-block active teamBtn">News</button></span>
+		<span style="width: 100%;"><button id="missionsBtn" class="btn btn-primary btn-block teamBtn">Launch Mission</button></span>
 	</div>
 
 	<!-- page content -->
-  <div id="partnersPanel_info">
+  <div id="newsPanel_info">
 			<div class="container">
-				<div class="row">
-					<div class="col">
-						<img style="padding: 15px;" class="img-fluid" src="./images/ansys.png">
-					</div>
-					<div class="col-6">
-						<img style="padding: 15px;" class="img-fluid" src="./images/simscale.png">
-					</div>
-					<div class="col">
-						<img style="padding: 15px;" class="img-fluid" src="./images/simscale.png">
-					</div>
-				</div>
-				<br>
-				<div class="row">
-					<div class="col">
-						<img class="img-fluid" src="./images/simscale.png">
-					</div>
-					<div class="col-5">
-						<img class="img-fluid" src="./images/simscale.png">
-					</div>
-					<div class="col">
-						<img class="img-fluid" src="./images/simscale.png">
-					</div>
-				</div>
+				
 			</div>
 		</div>
+	
+	<!-- footer for every page -->
+	<!-- <div id="footer_panel">
+		<span>
+			<img id="spacex_footer" src="images/spacexlogo.png">
+			<img id="macu_footer" src="images/macu_brighterworld.png">
+		</span>
+		<hr>
+		<p style="color: rgb(168, 168, 168);">McMaster Hyperloop 2019</p>
+	</div> -->
 
 	<!-- JS Script files for bootstrap 4 -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
