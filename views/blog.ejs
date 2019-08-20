@@ -1,7 +1,7 @@
 <% include ./partials/header.ejs %>
 	
 	<!-- page backdrop -->
-  <div id="teamPanel">
+  <div id="newsPanel">
       <!-- news carousel from Bootstrap 4 -->
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -33,10 +33,10 @@
             <span class="sr-only">Next</span>
           </a>
       </div>
-      <div style="background-color: rgba(0, 0, 0, 0.795); right: 0%; left: 50%; top: 10px; bottom: 0px;" class="carousel-caption d-none d-md-block">
-          <h1 style="font-size: 30px;">BLOG</h1>
-          <p id="teamDesc">News on our Pod development and launch mission.</p>
-          <p id="teamDesc">Updates coming soon...</p>
+      <div style="background-color: rgba(0, 0, 0, 0.795); right: 0%; left: 50%; top: 70px; bottom: 0px;" class="carousel-caption d-none d-md-block">
+          <h1 style="font-size: 50px;">BLOG</h1>
+          <p id="panelDesc">News on our Pod development and launch mission.</p>
+          <p id="panelDesc">Updates coming soon...</p>
       </div>
 		  
 	</div>
@@ -52,13 +52,15 @@
 	<!-- page content -->
   <div id="newsPanel_info">
 			<div class="container">
+        <br>
         <h2 id="subheading">News</h2>
+        <!-- loop through each database entry; for now keep it hardcoded to 5 iterations-->
         <% for(let i = 0; i < 5; i++) {%>
         <br>
 				<div class="card border-light mb-3" style="box-shadow: 0px 3px 6px 1px rgb(189, 189, 189);">
           <div class="card-header">First Post Title</div>
           <div class="card-body text-dark">
-            <img class="img-fluid" src="/images/slide_2.jpg">
+            <img style="padding-bottom: 20px;" class="img-fluid" src="/images/slide_2.jpg">
             <h5 class="card-title">August 19, 2019</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <button class="btn btn-outline-primary" style="float: right;">Read More</button>
@@ -66,17 +68,17 @@
         </div>
         <%}%>
 			</div>
-		</div>
+	</div>
 	
 	<!-- footer for every page -->
-	<!-- <div id="footer_panel">
+	<div id="footer_panel">
 		<span>
 			<img id="spacex_footer" src="images/spacexlogo.png">
 			<img id="macu_footer" src="images/macu_brighterworld.png">
 		</span>
 		<hr>
 		<p style="color: rgb(168, 168, 168);">McMaster Hyperloop 2019</p>
-	</div> -->
+	</div>
 
 	<!-- JS Script files for bootstrap 4 -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

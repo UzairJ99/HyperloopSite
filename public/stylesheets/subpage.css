@@ -19,11 +19,21 @@
 #teamPanel
 {
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
   background-color: rgb(67, 126, 194);
   margin-top: 60px;
   z-index: -100;
   height: 500px;
+}
+
+#newsPanel
+{
+  width: 100%;
+  /* position: absolute; */
+  background-color: rgb(67, 126, 194);
+  margin-top: 60px;
+  z-index: -100;
+  height: 550px;
 }
 
 #partnersPanel
@@ -71,10 +81,8 @@
 {
   width: 100%;
   background-color: white;
-  position: absolute;
   color: black;
-  padding-top: 120px;
-  margin-top: 550px;
+  margin-top: 120px;
   padding-bottom: 100px;
   font-size: 28px;
 }
@@ -95,10 +103,11 @@
 {
   width: 100%;
   background-color: white;
-  position: absolute;
+  /* position: absolute; */
   color: black;
   /* padding-top: 100px; */
-  margin-top: 700px;
+  /* margin-top: 700px; */
+  height:100%;
   padding-bottom: 100px;
   font-size: 28px;
 }
@@ -106,16 +115,16 @@
 #teamPanel_buttons
 {
   width: 100%;
-  position: absolute;
-  margin-top: 480px;
+  /* position: absolute; */
+  /* margin-top: 480px; */
   padding-top: 0;
 }
 
 #newsButtons
 {
   width: 100%;
-  position: absolute;
-  margin-top: 600px;
+  /* position: absolute; */
+  /* margin-top: 600px; */
   padding-top: 0;
 }
 
@@ -149,6 +158,8 @@
 #footer_panel
 {
   background-color: rgb(231, 231, 231);
+  position: relative;
+  bottom: 0;
   text-align: center;
   height: 400px;
 }
@@ -189,7 +200,7 @@ hr
   color: rgb(95, 166, 248);
 }
 
-#teamDesc
+#panelDesc
 {
   font-size: 20px;
   color: white;
@@ -206,13 +217,13 @@ hr
 .hiddenPanel
 {
   visibility: hidden; 
-  position: absolute;
+  display: none; /*very important; keeps the page size correct*/
 }
 
 .visiblePanel
 {
   visibility: visible; 
-  position: absolute;
+  display: inline-block; /*very important; keeps the page size correct*/
 }
 
 #contactForm
