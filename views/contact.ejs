@@ -5,8 +5,9 @@
 	<!-- bootstrap 4 link -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<!-- CSS stylesheets -->
-	<link rel="stylesheet" href="stylesheets/main.css">
-	<link rel="icon" href="images/logoM.png">
+  <link rel="stylesheet" href="/stylesheets/main.css">
+  <link rel="stylesheet" href="/stylesheets/subpage.css">
+	<link rel="icon" href="/images/logoM.png">
   <!-- custom fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
 	
@@ -16,7 +17,7 @@
 		<!-- middle logo M -->
 		<container id="logoContainer">
 			<div id="logoDiv">
-				<img id="logo" src="images/logoM.png">
+				<img id="logo" src="/images/logoM.png">
 			</div>
 		</container>
 		<!-- toggle button for drop down -->
@@ -42,18 +43,66 @@
 	      <ul class="navbar-nav mr-auto">
 	      
 	      <li class="nav-item">
-	        <a class="nav-link" href="./contact.html">Contact Us</a>
+	        <a class="nav-link" href="/contact.html">Contact Us</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="./blog.html">Blog</a>
+	        <a class="nav-link" href="#">Blog</a>
 				</li>
 				<li class="nav-item">
-	        <a class="nav-link" href="./partners.html">Partners</a>
+	        <a class="nav-link" href="#">Sponsor Us</a>
 				</li>
 	      </ul>
 	    </form>
 	  </div>
-	</nav>
+  </nav>
+  
+  <!-- panel -->
+  <div class="container">
+    <div id="contactForm" class="row">
+      <!-- left panel for address info -->
+      <div class="col-md">
+        <span style="width: 100%;" id="addressInfo">
+          <h3 id="subheading">Address</h3>
+          <p>McMaster Hyperloop <br> 1280 Main St West <br> L8S 4L8 <br> Hamilton, Ontario</p>
+          <br>
+          <h3 id="subheading">E-mail:</h3>
+          <p>mcmasterhyperloopteam@gmail.com</p>
+        </span>
+      </div>
+      <!-- right panel for email -->
+      <div class="col-md">
+        <span style="width: 100%;" id="msgForm">
+          <h3 id="subheading">Let's Get In Touch</h3>
+          <form>
+            <!-- first and last name input -->
+            <div class="form-row">
+                <div class="col">
+                  <label>First Name *</label>
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col">
+                  <label>Last Name *</label>
+                  <input type="text" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+            <br>
+            <!-- email address -->
+            <div class="form-group">
+              <label for="inputAddress">E-mail *</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="exampleName@example.com">
+            </div>
+            <!-- message conent -->
+            <div class="form-group">
+              <label>Message *</label>
+              <textarea class="form-control" placeholder="Enter your message here."></textarea>
+            </div>
+            <!-- submission button -->
+            <button type="submit" class="btn btn-lg btn-primary">Send!</button>
+          </form>
+        </span>
+      </div>
+    </div>
+  </div>
 
 	<!-- JS Script files for bootstrap 4 -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -62,6 +111,6 @@
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<!-- minimize logo on scroll -->
-	<script src="./scripts/minimizeLogo.js" type="text/javascript"></script>
+	<script src="/scripts/minimizeLogo.js" type="text/javascript"></script>
 </body>
 </html>
