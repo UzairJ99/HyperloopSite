@@ -47,10 +47,24 @@
 		<span style="width: 100%;"><button id="missionsBtn" class="btn btn-primary btn-block teamBtn">Launch Mission</button></span>
 	</div>
 
+  <br> 
+
 	<!-- page content -->
   <div id="newsPanel_info">
 			<div class="container">
-				
+        <h2 id="subheading">News</h2>
+        <% for(let i = 0; i < 5; i++) {%>
+        <br>
+				<div class="card border-light mb-3" style="box-shadow: 0px 3px 6px 1px rgb(189, 189, 189);">
+          <div class="card-header">First Post Title</div>
+          <div class="card-body text-dark">
+            <img class="img-fluid" src="/images/slide_2.jpg">
+            <h5 class="card-title">August 19, 2019</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button class="btn btn-outline-primary" style="float: right;">Read More</button>
+          </div>
+        </div>
+        <%}%>
 			</div>
 		</div>
 	
