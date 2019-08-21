@@ -10,31 +10,38 @@ var app = express();
 app.use(express.static("public"));
 
 //set up local host port
-app.listen(3000, function(){
+app.listen(3000, function()
+{
   console.log("server started.");
 });
 
 //router get methods to render each page
-app.get("/", function(req, res){
+app.get("/", function(req, res)
+{
   res.render("index.ejs");
 });
 
-app.get("/contact", function(req, res){
+app.get("/contact", function(req, res)
+{
   res.render("contact.ejs");
 });
 
-app.get("/about", function(req, res){
+app.get("/about", function(req, res)
+{
   res.render("about.ejs");
 });
 
-app.get("/blog", function(req, res){
+app.get("/blog", function(req, res)
+{
   res.render("blog.ejs");
 });
 
-app.get("/ourTeam", function(req, res){
+app.get("/ourTeam", function(req, res)
+{
   res.render("ourTeam.ejs");
 });
 
-app.get("/partners", function(req, res){
+app.get("/partners", function(req, res)
+{
   res.render("partners.ejs");
 });
