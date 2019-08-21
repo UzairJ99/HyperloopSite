@@ -13,7 +13,6 @@ app.use(express.static("public"));
 //allows form information extraction
 app.use(bodyParser.urlencoded({extended: true}));
 
-//transponder goes here for nodemailer
 
 //setting up email information
 var mailOptions = {
