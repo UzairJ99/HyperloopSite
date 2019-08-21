@@ -16,28 +16,28 @@
       <div class="col-md">
         <span style="width: 100%;" id="msgForm">
           <h3 id="subheading">Let's Get In Touch</h3>
-          <form style="margin-bottom: 100px;">
+          <form style="margin-bottom: 100px;" action="/" method="POST">
             <!-- first and last name input -->
             <div class="form-row">
                 <div class="col">
                   <label>First Name *</label>
-                  <input type="text" class="form-control" placeholder="First name">
+                  <input name="name" type="text" class="form-control" placeholder="First name">
                 </div>
                 <div class="col">
                   <label>Last Name *</label>
-                  <input type="text" class="form-control" placeholder="Last name">
+                  <input name="lastName" type="text" class="form-control" placeholder="Last name">
                 </div>
             </div>
             <br>
             <!-- email address -->
             <div class="form-group">
               <label for="inputEmail">E-mail *</label>
-              <input type="text" class="form-control" id="inputEmail" placeholder="exampleName@example.com">
+              <input name="email" type="text" class="form-control" id="inputEmail" placeholder="exampleName@example.com">
             </div>
             <!-- message conent -->
             <div class="form-group">
               <label>Message *</label>
-              <textarea style="height: 10rem;" class="form-control" placeholder="Enter your message here."></textarea>
+              <textarea name="message" style="height: 10rem;" class="form-control" placeholder="Enter your message here."></textarea>
             </div>
             <!-- submission button -->
             <button type="submit" class="btn btn-lg btn-primary">Send!</button>
@@ -46,5 +46,5 @@
       </div>
     </div>
   </div>
-  
+
 <% include ./partials/footer.ejs %>
