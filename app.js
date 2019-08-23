@@ -146,3 +146,8 @@ app.get("/partners", function(req, res)
 {
   res.render("partners.ejs");
 });
+
+app.get("/ourPod", function(req, res)
+{
+  res.render("ourPod.ejs");
+});

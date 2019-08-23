@@ -165,7 +165,7 @@
 
 #spacex_footer
 {
-  width: 400px;
+  width: 300px;
   margin-top: 50px;
   margin-right: 30px;
   display: inline-block;
@@ -174,9 +174,17 @@
 #macu_footer
 {
   display: inline-block;
-  width: 400px;
+  width: 300px;
   margin-top: 50px;
   margin-left: 30px;
+}
+
+#msu_footer
+{
+  display: inline-block;
+  width: 200px;
+  margin-top: 50px;
+  margin-left: 80px;
 }
 
 hr 
