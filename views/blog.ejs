@@ -55,18 +55,18 @@
         <br>
         <h2 id="subheading">News</h2>
         <!-- loop through each database entry; for now keep it hardcoded to 5 iterations-->
-        <% for(let i = 0; i < 5; i++) {%>
+        <% blogs.forEach(function(blog) {%>
         <br>
 				<div class="card border-light mb-3" style="box-shadow: 0px 3px 6px 1px rgb(189, 189, 189);">
-          <div class="card-header">First Post Title</div>
+          <div class="card-header"><%=blog.title%></div>
           <div class="card-body text-dark">
             <img style="padding-bottom: 20px;" class="img-fluid" src="/images/slide_2.jpg">
-            <h5 class="card-title">August 19, 2019</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title"><%=blog.date%></h5>
+            <p class="card-text"><%=blog.description%></p>
             <button class="btn btn-outline-primary" style="float: right;">Read More</button>
           </div>
         </div>
-        <%}%>
+        <%})%>
 			</div>
 	</div>
 	

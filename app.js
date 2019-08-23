@@ -7,6 +7,47 @@ var express = require("express");
 var app = express();
 var nodemailer = require("nodemailer");
 var bodyParser = require("body-parser");
+var mongoose = require("mongoose");
+
+//connect to MongoDB
+mongoose.connect("mongodb://localhost/hyperloopblogs", {useNewUrlParser: true});
+
+//schema setup
+var blogSchema = new mongoose.Schema(
+  {
+    title: String,
+    image: String,
+    description: String,
+    date: String
+  }
+);
+
+//create mongo model to use schema
+var Blog = mongoose.model("Blog", blogSchema);
+
+var today = new Date();
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+
+Blog.create(
+  {
+    title: "Website Deployment",
+    image: "",
+    description: "McMaster's hyperloop team has officially hosted their website into live production!",
+    date: date
+  },
+  function(err, blog)
+  {
+    if(err)
+    {
+      console.log(err);
+    }
+    else
+    {
+      console.log("New blog created.");
+      console.log(blog);
+    }
+  }
+);
 
 //sets main directory path to start in /public
 app.use(express.static("public"));
@@ -79,7 +120,21 @@ app.get("/about", function(req, res)
 
 app.get("/blog", function(req, res)
 {
-  res.render("blog.ejs");
+  //search database for all blogs and pass them through as allBlogs
+  Blog.find({}, function(err, allBlogs)
+  {
+    if(err)
+    {
+      console.log(err);
+    }
+    else
+    {
+      //render the page
+      //the ejs file will reference each item from the database as 'blogs'
+      res.render("blog.ejs", {blogs:allBlogs});
+    }
+  });
+
 });
 
 app.get("/ourTeam", function(req, res)
