@@ -10,7 +10,7 @@ var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 
 //connect to MongoDB
-mongoose.connect("mongodb://localhost/hyperloopblogs", {useNewUrlParser: true});
+mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true});
 
 //schema setup
 var blogSchema = new mongoose.Schema(
@@ -27,6 +27,8 @@ var Blog = mongoose.model("Blog", blogSchema);
 
 var today = new Date();
 var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+
+//testing purpose
 
 // Blog.create(
 //   {
@@ -54,6 +56,16 @@ app.use(express.static("public"));
 //allows form information extraction
 app.use(bodyParser.urlencoded({extended: true}));
 
+//transporter goes here
+var transporter = nodemailer.createTransport({
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: true,
+  auth: {
+    user: 'hyperloopmailman@gmail.com',
+    pass: process.env.EMAILPASS
+  }
+});
 
 //setting up email information
 var mailOptions = {

@@ -16,11 +16,11 @@
             </div>
             <div class="carousel-item">
               <!-- second slide -->
-              <img class="d-block w-100" src="./images/slide_2.jpg" alt="Second slide">
+              <img class="d-block w-100" src="./images/zoompov.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
                 <!-- second slide -->
-                <img class="d-block w-100" src="./images/slide_3.jpg" alt="Third slide">
+                <img class="d-block w-100" src="./images/pod_silhouette.png" alt="Third slide">
               </div>
           </div>
           <!-- control buttons -->
@@ -52,21 +52,23 @@
 	<!-- page content -->
   <div id="newsPanel_info">
 			<div class="container">
-        <br>
-        <h2 id="subheading">News</h2>
-        <!-- loop through each database entry; for now keep it hardcoded to 5 iterations-->
-        <% blogs.forEach(function(blog) {%>
-        <br>
-				<div class="card border-light mb-3" style="box-shadow: 0px 3px 6px 1px rgb(189, 189, 189);">
-          <div class="card-header"><%=blog.title%></div>
-          <div class="card-body text-dark">
-            <img style="padding-bottom: 20px;" class="img-fluid" src="/images/slide_2.jpg">
-            <h5 class="card-title"><%=blog.date%></h5>
-            <p class="card-text"><%=blog.description%></p>
-            <button class="btn btn-outline-primary" style="float: right;">Read More</button>
+        <div id="blogsPanel" class="visiblePanel" >
+          <br>
+          <h2 id="subheading">News</h2>
+          <!-- loop through each database entry; for now keep it hardcoded to 5 iterations-->
+          <% blogs.forEach(function(blog) {%>
+          <br>
+          <div class="card border-light mb-3" style="box-shadow: 0px 3px 6px 1px rgb(189, 189, 189);">
+            <div class="card-header"><%=blog.title%></div>
+            <div class="card-body text-dark">
+              <img style="padding-bottom: 20px;" class="img-fluid" src="/images/slide_2.jpg">
+              <h5 class="card-title"><%=blog.date%></h5>
+              <p class="card-text"><%=blog.description%></p>
+              <button class="btn btn-outline-primary" style="float: right;">Read More</button>
+            </div>
           </div>
+          <%})%>
         </div>
-        <%})%>
 			</div>
 	</div>
 	
