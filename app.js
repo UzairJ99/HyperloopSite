@@ -28,29 +28,6 @@ var Blog = mongoose.model("Blog", blogSchema);
 var today = new Date();
 var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 
-//testing purpose
-
-// Blog.create(
-//   {
-//     title: "Website Deployment",
-//     image: "",
-//     description: "McMaster's hyperloop team has officially hosted their website into live production!",
-//     date: date
-//   },
-//   function(err, blog)
-//   {
-//     if(err)
-//     {
-//       console.log(err);
-//     }
-//     else
-//     {
-//       console.log("New blog created.");
-//       console.log(blog);
-//     }
-//   }
-// );
-
 //sets main directory path to start in /public
 app.use(express.static("public"));
 //allows form information extraction
